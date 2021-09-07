@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Calculator</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+
+	<!-- Font Awesome cdn link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<!-- Bootstrap Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Owl Carousel Css -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Responsive Css -->
+	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+	<!-- Calculator Start -->
+	<div class="cal_style">
+		<h1>Js Calculator</h1>
+		<div class="cal_boddy">
+			<form action="#" class="" name="cal">
+				<!-- display -->
+				<input type="text" class="result" name="display"> <br><br>
+
+				<!-- button -->
+				<input type="button" class="btn" value="1" onclick="cal.display.value += '1' ">
+				<input type="button" class="btn" value="2" onclick="cal.display.value += '2' ">
+				<input type="button" class="btn" value="3" onclick="cal.display.value += '3' ">
+				<input type="button" class="btn" value="+" onclick="cal.display.value += '+'">
+				<br><br>
+
+				<input type="button" class="btn" value="4" onclick="cal.display.value += '4' ">
+				<input type="button" class="btn" value="5" onclick="cal.display.value += '5' ">
+				<input type="button" class="btn" value="6" onclick="cal.display.value += '6' ">
+				<input type="button" class="btn" value="-" onclick="cal.display.value += '-' ">
+				<br><br>
+
+				<input type="button" class="btn" value="7" onclick="cal.display.value += '7' ">
+				<input type="button" class="btn" value="8" onclick="cal.display.value += '8' ">
+				<input type="button" class="btn" value="9" onclick="cal.display.value += '9' ">
+				<input type="button" class="btn" value="*" onclick="cal.display.value += '*' ">
+				<br><br>
+
+				<input type="button" class="btn" value="C" onclick="cal.display.value = '' ">
+				<input type="button" class="btn" value="0" onclick="cal.display.value += '0' ">
+				<input type="button" class="btn" value="/" onclick="cal.display.value += '/' ">
+				<input type="button" class="btn" value="=" onclick="cal.display.value = eval(cal.display.value)">
+
+			</form>
+		</div>
+	</div>
+	<!-- Calculator Start -->
+
+	<!-- Modal Start -->
+	<div class="modal_part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Modal</h1>
+					<center><button class="btn-lg btn-success m_btn mb-5">View Here</button></center>
+				</div>
+				<div class="col-lg-4">
+					<div class="modal_card card" id="cModal">
+						<div class="single_modal card-body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolore beatae
+								eligendi possimus est a placeat! Velit, repudiandae. Praesentium vero aperiam ut
+								laboriosam fugit repudiandae assumenda quo sed ad nesciunt?</p>
+							<button class="btn-sm btn-danger">Yes</button>
+							<button class="btn-sm btn-secondary" id="cancel">No</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="modal_card card" id="cModal">
+						<div class="single_modal card-body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolore beatae
+								eligendi possimus est a placeat! Velit, repudiandae. Praesentium vero aperiam ut
+								laboriosam fugit repudiandae assumenda quo sed ad nesciunt?</p>
+							<button class="btn-sm btn-danger">Yes</button>
+							<button class="btn-sm btn-secondary" id="cancel2">No</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="modal_card card" id="cModal">
+						<div class="single_modal card-body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolore beatae
+								eligendi possimus est a placeat! Velit, repudiandae. Praesentium vero aperiam ut
+								laboriosam fugit repudiandae assumenda quo sed ad nesciunt?</p>
+							<button class="btn-sm btn-danger">Yes</button>
+							<button class="btn-sm btn-secondary" id="cancel3">No</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Modal End -->
+
+	<!-- Modal Gallery Start -->
+	<div class="modal_gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title">
+						<h1>Modal Gallery</h1>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="gallery-wrapper">
+						<div class="single_gallery">
+							<img src="image/i1.png" alt="i1" class="img-fluid" id="main_img">
+							<i class="fa fa-times" id="del"></i>
+						</div>
+						<div class="single_gallery">
+							<img src="image/i2.png" alt="i1" class="img-fluid" id="main_img1">
+						</div>
+						<div class="single_gallery">
+							<img src="image/i3.png" alt="i1" class="img-fluid" id="main_img2">
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="full_size_image">
+			<img src="image/i1.png" alt="" id="fullImg">
+			<img src="image/i2.png" alt="" id="fullImg1">
+			<img src="image/i3.png" alt="" id="fullImg2">
+		</div>
+	</div>
+	<!-- Modal Gallery End -->
+
+	<!-- Slider Start -->
+	<div class="slider_part">
+		<h2>See what our members are saying</h2>
+		<div class="content">
+			<div class="slider_row" id="slide">
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider1.png" alt="slider1">
+					</div>
+				</div>
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider2.png" alt="slider2">
+					</div>
+				</div>
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider3.png" alt="slider3">
+					</div>
+				</div>
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider4.png" alt="slider4">
+					</div>
+				</div>
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider5.png" alt="slider5">
+					</div>
+				</div>
+
+				<div class="slider_col testimonial">
+					<div class="slider_text">
+						<p>“As I traveled around Africa, I was compelled to tell the stories of the people and places I
+							encountered through film. But I had no resources. I enrolled in Ken Burns’ class, and his
+							words ignited a fire in me. I immediately started creating and stopped waiting.”</p>
+						<span><strong>Obaji</strong> Journalist, Nigeria</span>
+					</div>
+					<div class="slider_img">
+						<img src="image/slider6.png" alt="slider6">
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<!-- Pagination -->
+		<div class="pagination">
+			<span class="dots active"></span>
+			<span class="dots"></span>
+			<span class="dots"></span>
+			<span class="dots"></span>
+			<span class="dots"></span>
+			<span class="dots"></span>
+		</div>
+
+		<!-- Left Right Arrows -->
+		<div class="left">
+			<i class="fa fa-angle-left" id="left"></i>
+		</div>
+		<div class="right">
+			<i class="fa fa-angle-right" id="right"></i>
+		</div>
+	</div>
+	<!-- Slider End -->
+
+
+
+
+	<!-- Bootstrap js with Popper -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+	<!-- jquery link here -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- owl carousel js link -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counter-up link here -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+	<!-- Custom js link here -->
+	<script src="js/custom.js"></script>
+
+	<script>
+		var sDot = document.getElementsByClassName('dots');
+		var tSlide = document.getElementById('slide');
+		var left = document.getElementById('left');
+		var left = document.getElementById('left');
+
+		sDot[0].onclick = function () {
+			tSlide.style.transform = 'translateX(0px)';
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+		sDot[1].onclick = function () {
+			tSlide.style.transform = 'translateX(-800px)';
+			tSlide.style.transition = '.3s';
+			
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+
+		sDot[2].onclick = function () {
+			tSlide.style.transform = 'translateX(-1600px)';
+			tSlide.style.transition = '.3s';
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+
+		sDot[3].onclick = function () {
+			tSlide.style.transform = 'translateX(-2400px)';
+			tSlide.style.transition = '.3s';
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+
+		sDot[4].onclick = function () {
+			tSlide.style.transform = 'translateX(-3200px)';
+			tSlide.style.transition = '.3s';
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+
+		sDot[5].onclick = function () {
+			tSlide.style.transform = 'translateX(-4000px)';
+			tSlide.style.transition = '.3s';
+
+			for (var i = 0; i < 6; i++) {
+				sDot[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		};
+	</script>
+
+</body>
+
+</html>
